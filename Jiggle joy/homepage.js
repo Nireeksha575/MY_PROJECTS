@@ -2,15 +2,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 import{getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js"
-
+// WARNING: Do NOT expose real Firebase credentials in public repos
 const firebaseConfig = {
-    apiKey: "AIzaSyCjrQnmDU5Q2xOSgs0ytqneJ4o5mBDaHfk",
-    authDomain: "login-form-dc77d.firebaseapp.com",
-    projectId: "login-form-dc77d",
-    storageBucket: "login-form-dc77d.firebasestorage.app",
-    messagingSenderId: "1031108671604",
-    appId: "1:1031108671604:web:1dbfb902573a2872897921"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
   };
+  
   
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
